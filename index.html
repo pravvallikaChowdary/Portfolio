@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        nav {
+            background-color: #808080;
+            color: black;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1500px;
+        }
+
+        .logo img {
+            color: black;
+            height: 30px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .logo p {
+            color: black;
+            margin: 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin-left: 10px;
+        }
+
+        li a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        li a:hover {
+            background-color: #808080;
+            border-radius: 5px;
+        }
+
+        .content {
+            font-family: Arial,sans-serif;
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        #footer {
+            background-color: #808080;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .icons {
+            font-size: 24px;
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+           
+        }
+
+        .icons:hover {
+            color: #808080;
+        }
+
+        #footer {
+            position: relative;
+            top: 580px;
+            height: 30px;
+            width: 100%;
+        }
+
+        #tab1, #tab2, #tab3, #tab4 {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #d3d3d3;
+            width: 950px;
+            position: fixed;
+            left: 600px;
+            height: 600px;
+            padding: 20px;
+        }
+
+        .last {
+            position: relative;
+            bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        #pra{
+            display: block;
+            position: fixed;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="pra">
+<nav>
+    <ul>
+        <li><a class="tab active" href="#tab1">Home</a></li>
+        <li><a class="tab" href="#tab2">About</a></li>
+        <li><a class="tab" href="#tab3">Services</a></li>
+        <li><a class="tab" href="#tab4">Contact</a></li>
+    </ul>
+</nav>
+
+<div style="position: relative">
+    <img src="http://gyanvaan.com/wp-content/uploads/2023/05/Cute-Girl-Pic-For-Dp-3.jpg" height="600" width="600" style="position: fixed;">
+</div>
+<div>
+    <div id="tab1" class="content active">
+        <h1>Hi,I'm Pravallika Chowdary</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <br>
+        <center>
+           <h2>Computer Science And Engineering</h2>
+           <p>A Third-year undergraduate<br>
+                Engineering student at Vignan University<br>
+                At Vadlamudi near by Guntur<br><br>
+        </center>
+        <br><br>
+    </div>
+    <div id="tab2" class="content">
+        <h2>Education:</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>CGPA/Percentage</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>B.Tech (IT)</td>
+                <td>Vignan University</td>
+                <td>7.7</td>
+                <td>2026</td>
+            </tr>
+            <tr>
+                <td>Intermediate (MPC)</td>
+                <td>Geetham College</td>
+                <td>85%</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td>Geetham School</td>
+                <td>98%</td>
+                <td>2019</td>
+            </tr>
+        </table>
+        <h2>Technical Skills:</h2>
+        <h3>Programming Languages:</h3>
+        <p>
+            C,
+            Java,
+            JavaScript,
+            Python,
+            Database: MySQL
+        </p>
+        <h2>Hobbies:</h2>
+        <p>
+            Problem solving,
+            Coding,
+            Learning everything that I don't know
+        </p>
+        <h2>Personal Details</h2>
+        <p>
+            DOB: 25-03-2005,<br>
+            Address: 6-119, Durgi, Mututkuru, Andhra Pradesh
+        </p>
+        <br><br>
+    </div>
+    <div id="tab3" class="content">
+        <h1>Projects</h1>
+        <pre style="font-family: Arial,sans-serif;">
+            Created some websites<br>
+            Some ML projects<br>
+            Elective Management System<br>
+        </pre>
+    </div>
+    <div id="tab4" class="content">
+        <h1>Contact</h1>
+        <b>Phone Number:</b> 9059330921<br><br>
+        <b>Email: </b>pravallikapotla@gmail.com<br>
+    </div>
+</div>
+
+<div id="footer">
+    <a href="#" class="icons"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="icons"><i class="fab fa-google"></i></a>
+    <a href="#" class="icons"><i class="fab fa-amazon"></i></a>
+    <a href="#" class="icons"><i class="fab fa-apple"></i></a>
+    <a href="#" class="icons"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="icons"><i class="fab fa-github"></i></a>
+</div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                
+                tabs.forEach(t => {
+                    t.classList.remove('active');
+                });
+                tab.classList.add('active');
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                const tabId = tab.getAttribute('href').slice(1); 
+                const contentToShow = document.getElementById(tabId);
+                contentToShow.classList.add('active');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
